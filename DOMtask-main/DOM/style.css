@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #edf5e1;
+}
+h1 {
+  margin: 0;
+  color: #bc986a;
+  text-align: center;
+  margin-top: 0.7%;
+}
+.container-sm {
+  /* border: 1px solid firebrick; */
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #e27d60;
+  text-align: center;
+  padding: 8px;
+}
+th {
+  border: 1px solid #bc986a;
+}
+
+tr:nth-child(even) {
+  /* background-color: #dddddd; */
+  background-color: #c38d9e;
+}
+tr:nth-child(odd) {
+  background-color: #41b3a3;
+}
+
+th {
+  background-color: #e27d60;
+}
+button {
+  padding: 5px 12px;
+  background-color: #daad86;
+  border: none;
+  outline: none;
+  margin-right: 0.2%;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #bc986a;
+  color: #fbeec1;
+}
+button:active {
+  background-color: #fbeec1;
+  color: #bc986a;
+}
+#data-box {
+  margin-top: 2%;
+}
+#pagi-buttons {
+  margin-top: 6%;
+  text-align: center;
+}
+.disable-button {
+  pointer-events: none;
+  background-color: rgba(204, 186, 194, 0.867);
+}
+.active {
+  background-color: #fbeec1;
+  color: #bc986a;
+  border: 1px solid #e27d60;
+  font-weight: 400;
+}
+
+#input {
+  width: fit-content;
+  background-color: #c38d9e;
+}
+@media screen and (min-width: 1201px) {
+  /* extralarge */
+  .container-fluid {
+    width: 100%;
+  }
+  .container-sm {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  /* large */
+  .container-fluid {
+    width: 100%;
+  }
+  .container-sm {
+    max-width: 960px;
+  }
+}
+@media screen and (max-width: 992px) {
+  /* medium */
+  .container-fluid {
+    width: 100%;
+  }
+  .container-sm {
+    max-width: 720px;
+  }
+  #input {
+    margin: 2%;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* small */
+  .container-fluid {
+    width: 100%;
+  }
+  .container-sm {
+    max-width: 540px;
+  }
+  button {
+    padding: 4px 9px;
+  }
+  #input {
+    margin: 2%;
+  }
+}
+@media screen and (max-width: 576px) {
+  /* extra small */
+  .container-fluid {
+    width: 100%;
+  }
+  .container-sm {
+    max-width: 100%;
+  }
+  button {
+    padding: 2px 8px;
+    margin-right: 0.2%;
+  }
+  #input {
+    margin: 2%;
+  }
+}
